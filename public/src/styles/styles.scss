@@ -1,0 +1,46 @@
+/* Variables */
+$custom_bg: #00254d;
+$custom_body_color: #000000;
+$custom_white: #ffffff;
+
+body {
+    margin: 0;
+    background: $custom_bg;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+
+p {
+    color:$custom_body_color;
+    letter-spacing: 0.5px;
+}
+
+.actions {
+    width: fit-content;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .button {
+        border-radius: 5px;
+        padding: 10px 20px;
+        background: linear-gradient(45deg, #1da1f2, #0e71c8);
+        box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.4);
+        color: $custom_white;
+
+        &:hover {
+            box-shadow: 0px 7px 30px rgba(19, 127, 212, 0.75);
+        }
+    }
+}
+
+*:focus {
+    outline: none !important;
+}
+
+@import "index";
